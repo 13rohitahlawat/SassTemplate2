@@ -1,0 +1,72 @@
+@import "utilities/config";
+@import "utilities/utSec";
+@import "utilities/form";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway", "sans-serif";
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border-bottom: solid 1px $primary-color;
+  opacity: 0.9;
+  ul {
+    display: flex;
+
+    a {
+      color: #fff;
+      padding: 0.45rem;
+      margin: 0 0.25rem1 0;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+//landing
+
+.loading {
+  background-image: url("../images/image.jpg");
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  &-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
